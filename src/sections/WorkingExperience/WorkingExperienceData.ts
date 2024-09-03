@@ -48,7 +48,7 @@ export const WorkingExperienceData: WorkingExperienceData[] = [
     employer: "onvista media GmbH",
     employerLink: "https://www.onvista.de/",
     position: "Frontend Developer",
-    details: `I first came into contact with Scrum and modern front-end methods at onvista. I worked in a large team on a stock exchange website.  I was responsible for the “IRON”. A legacy system based on Twig Template/PHP Symfony and Jenkins Deployment. I worked on the replacement of the old systems with the new “ONE” system based on React / Next.js with REST API and took over and optimized existing features. I worked on the new, self-developed CMS based on React and, for example, developed new content blocks and built the drag-drop mechanics so that internal users can easily build and edit new pages. I also wrote automated tests with Cypress.`,
+    details: `I first came into contact with Scrum and modern front-end methods (like Git) at onvista. I worked in a large team on a stock exchange website.  I was responsible for the “IRON”. A legacy system based on Twig Template/PHP Symfony and Jenkins Deployment. I worked on the replacement of the old systems with the new “ONE” system based on React / Next.js with REST API and took over and optimized existing features. I worked on the new, self-developed CMS based on React and, for example, developed new content blocks and built the drag-drop mechanics so that internal users can easily build and edit new pages. I also wrote automated tests with Cypress.`,
     duration: "August 2019 - December 2021",
   },
   {

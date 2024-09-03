@@ -18,15 +18,13 @@ export default function SideHustles({
   return (
     <>
       <div className="mx-auto max-w-7xl px-6 pb-32 pt-2 sm:pt-60 lg:px-8 lg:pt-2">
-        <div className="sm:flex sm:items-center">
-          <div className="sm:flex-auto">
-            <h2 className="text-2xl font-semibold leading-6 text-white">
-              Side Hustles
-            </h2>
-            <p className="mt-2 text-sm text-gray-300">
-              A list of my current and former side hustles.
-            </p>
-          </div>
+      <div className="max-w-xl">
+          <h2 className="text-lg font-semibold leading-8 tracking-tight text-zinc-300">
+            Side Hustles
+          </h2>
+          <p className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">
+            What did I do on the side?
+          </p>
         </div>
         <div className="mt-8 flow-root">
           <div className="-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">

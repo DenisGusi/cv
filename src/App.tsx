@@ -5,6 +5,7 @@ import WorkingExperience from './sections/WorkingExperience/WorkingExperience'
 import { WorkingExperienceData } from './sections/WorkingExperience/WorkingExperienceData'
 import SideHustles from './sections/SideHustles/SideHustles'
 import { SideHustlesData } from './sections/SideHustles/SideHustlesData'
+import References from './sections/References'
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
     <>
       <Hero />
       <WorkingExperience WorkingExperienceData={WorkingExperienceData}  />
+      <References />
       <SideHustles SideHustlesData={SideHustlesData} />
     </>
   )
