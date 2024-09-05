@@ -99,7 +99,7 @@ export default function DiceExample() {
         </p>
       </div>
       <div className="relative isolate">
-        <div className="mx-auto max-w-7xl pb-24 pt-10 sm:pb-32 lg:grid lg:grid-cols-2 lg:gap-x-8">
+        <div className="mx-auto max-w-7xl pb-24 mt-6 sm:pb-32 lg:grid lg:grid-cols-2 lg:gap-x-8">
           <div className="px-6 lg:px-0 lg:pt-4">
             <div className="mx-auto max-w-2xl">
               <p className="text-white">

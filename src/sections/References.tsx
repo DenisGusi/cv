@@ -56,7 +56,7 @@ const testimonials = [
               Don't take only my word for it.
             </p>
           </div>
-          <div className="mx-auto mt-16 flow-root max-w-2xl sm:mt-20 lg:mx-0 lg:max-w-none">
+          <div className="mx-auto mt-8 flow-root max-w-2xl lg:mx-0 lg:max-w-none">
             <div className="-mt-8 sm:-mx-4 sm:columns-2 sm:text-[0] lg:columns-3">
               {testimonials.map((testimonial) => (
                 <div key={testimonial.author.handle} className="pt-8 sm:inline-block sm:w-full sm:px-4">
