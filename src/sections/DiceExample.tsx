@@ -13,34 +13,37 @@ const highlightedCode = hljs.highlight(
 const [results, setResults] = useState<{ notation: string; rolls: { [key: string]: number[] } }[]>([]);
 
 const handleDiceClick = (diceType: string) => {
-    setDicePool((prevDicePool) => {
-        const newDicePool = { ...prevDicePool };
-        if (newDicePool[diceType]) {
-            newDicePool[diceType] += 1;
-        } else {
-            newDicePool[diceType] = 1;
-        }
-        return newDicePool;
-    });
+setDicePool((prevDicePool) => {
+    const newDicePool = { ...prevDicePool };
+    if (newDicePool[diceType]) {
+    newDicePool[diceType] += 1;
+    } else {
+    newDicePool[diceType] = 1;
+    }
+    return newDicePool;
+});
 };
 
 const rollDice = () => {
-    const notation = renderDiceNotation();
-    const rolls = Object.entries(dicePool).reduce((acc, [diceType, count]) => {
-        acc[diceType] = Array.from({ length: count }, () => Math.floor(Math.random() * parseInt(diceType)) + 1);
-        return acc;
-    }, {} as { [key: string]: number[] });
-    setResults((prevResults) => [...prevResults, { notation, rolls }]);
+const notation = renderDiceNotation();
+const rolls = Object.entries(dicePool).reduce((acc, [diceType, count]) => {
+    acc[diceType] = Array.from(
+    { length: count },
+    () => Math.floor(Math.random() * parseInt(diceType)) + 1
+    );
+    return acc;
+}, {} as { [key: string]: number[] });
+setResults((prevResults) => [...prevResults, { notation, rolls }]);
 };
 
 const renderDiceNotation = () => {
-    return Object.entries(dicePool)
-        .map(([diceType, count]) => \`\${count}d\${diceType}\`)
-        .join(" + ");
+return Object.entries(dicePool)
+    .map(([diceType, count]) => \`\${count}d\${diceType}\`)
+    .join(" + ");
 };
 
 const handleClearClick = () => {
-    setDicePool({});
+setDicePool({});
 };`,
   { language: "typescript" }
 ).value;
