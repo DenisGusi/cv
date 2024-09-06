@@ -140,7 +140,7 @@ export default function DiceExample() {
                     {renderDiceNotation()}
                   </p>
                 </div>
-                <div className="bg-zinc-700 border-t bottom-0 min-h-10 flex flex-row p-2 gap-2">
+                <div className="bg-zinc-700 border-t bottom-0 min-h-10 flex flex-row flex-wrap p-2 gap-2">
                   <button
                     className={diceButtonClasses}
                     onClick={() => handleDiceClick("4")}
